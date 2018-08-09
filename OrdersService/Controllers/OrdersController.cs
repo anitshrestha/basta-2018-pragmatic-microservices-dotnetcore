@@ -83,7 +83,7 @@ namespace OrdersService.Controllers
                 // TODO: Exception handling
                 bus.Publish(message);
 
-                _orderHubContext.Clients.Group(message.UserId).InvokeAsync("orderCreated");
+                _orderHubContext.Clients.Group(message.UserId).SendAsync("orderCreated");
             }
         }
     }

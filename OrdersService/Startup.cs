@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using OrdersService.Authentication;
 using OrdersService.Discovery;
 using OrdersService.Hubs;
@@ -44,7 +43,7 @@ namespace OrdersService
                 var address = Configuration["consulConfig:address"];
                 consulConfig.Address = new Uri(address);
             }));
-            services.AddSingleton<IHostedService, ConsulHostedService>();
+            services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, ConsulHostedService>();
 
             services
                 .AddMvcCore()
@@ -171,7 +170,7 @@ namespace OrdersService
             {
                 Log.Information("###Shipping created: " + msg.Created + " for " + msg.OrderId);
 
-                _ordersHubContext.Clients.Group(msg.UserId).InvokeAsync("shippingCreated", msg.OrderId);
+                _ordersHubContext.Clients.Group(msg.UserId).SendAsync("shippingCreated", msg.OrderId);
             });
         }
 

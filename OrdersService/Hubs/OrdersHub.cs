@@ -15,7 +15,7 @@ namespace OrdersService.Hubs
             var identity = Context.User.Identity as ClaimsIdentity;
             var subjectId = identity?.Claims.FirstOrDefault(c => c.Type == "sub")?.Value;
 
-            Groups.AddAsync(Context.ConnectionId, subjectId);
+            Groups.AddToGroupAsync(Context.ConnectionId, subjectId);
 
             return base.OnConnectedAsync();
         }
