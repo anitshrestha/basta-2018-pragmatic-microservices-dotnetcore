@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Options;
 using OrdersService.Hubs;
+using OrdersService.Messages;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -74,10 +75,10 @@ namespace OrdersService.Controllers
                 var identity = User.Identity as ClaimsIdentity;
                 var subjectId = identity?.Claims.FirstOrDefault(c => c.Type == "sub")?.Value;
 
-                var message = new QueuingMessages.NewOrderMessage
+                var message = new NewOrderMessage
                 {
                     UserId = subjectId,
-                    Order = Mapper.Map<QueuingMessages.Order>(newOrder)
+                    Order = Mapper.Map<Order>(newOrder)
                 };
 
                 // TODO: Exception handling

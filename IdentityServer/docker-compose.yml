@@ -1,8 +1,8 @@
-identityserver:
-    build: .
-    dockerfile: Dockerfile
-    container_name: identityserver
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "5000:5000"
+version: '3.4'
+
+services:
+  identityserverwithaspnetidentity:
+    image: ${DOCKER_REGISTRY}identityserverwithaspnetidentity
+    build:
+      context: .
+      dockerfile: src/IdentityServerWithAspNetIdentity/Dockerfile

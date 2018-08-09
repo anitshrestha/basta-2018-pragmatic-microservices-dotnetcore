@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using OrdersService.Authentication;
 using OrdersService.Discovery;
 using OrdersService.Hubs;
+using OrdersService.Messages;
 using Polly;
 using Serilog;
 using Swashbuckle.AspNetCore.Swagger;
@@ -166,7 +167,7 @@ namespace OrdersService
         {
             _bus = RabbitHutch.CreateBus(Configuration["appSettings:rabbitMqConnectionString"]);
 
-            _bus.Subscribe<QueuingMessages.ShippingCreatedMessage>("shipping", msg =>
+            _bus.Subscribe<ShippingCreatedMessage>("shipping", msg =>
             {
                 Log.Information("###Shipping created: " + msg.Created + " for " + msg.OrderId);
 
@@ -178,8 +179,8 @@ namespace OrdersService
         {
             Mapper.Initialize(cfg =>
             {
-                cfg.CreateMap<DTOs.OrderItem, QueuingMessages.OrderItem>();
-                cfg.CreateMap<DTOs.Order, QueuingMessages.Order>()
+                cfg.CreateMap<DTOs.OrderItem, OrderItem>();
+                cfg.CreateMap<DTOs.Order, Order>()
                     .ForMember(d => d.Items, opt => opt.MapFrom(s => s.Items));
             });
             Mapper.AssertConfigurationIsValid();
