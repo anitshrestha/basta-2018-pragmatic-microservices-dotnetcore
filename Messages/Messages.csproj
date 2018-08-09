@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="NewOrderMessage.d.ts">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewOrderMessage.cs</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Order.d.ts">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Order.cs</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="OrderItem.d.ts">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ShippingCreatedMessage.d.ts">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShippingCreatedMessage.cs</DependentUpon>
+    </TypeScriptCompile>
+  </ItemGroup>
+</Project>
