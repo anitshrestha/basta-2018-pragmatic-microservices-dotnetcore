@@ -1,0 +1,539 @@
+2018-09-18 19:37:23.722 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-09-18 19:37:23.810 +02:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-09-18 19:37:23.813 +02:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-09-18 19:37:23.814 +02:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-09-18 19:37:23.814 +02:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-09-18 19:37:23.814 +02:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-09-18 19:37:24.083 +02:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://[::1]:5000: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -48 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -48 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2018-09-18 19:37:58.896 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-09-18 19:37:58.980 +02:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-09-18 19:37:58.984 +02:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-09-18 19:37:58.984 +02:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-09-18 19:37:58.984 +02:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-09-18 19:37:58.984 +02:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-09-18 19:37:59.204 +02:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://[::1]:5000: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -48 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -48 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2018-09-18 19:38:43.389 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-09-18 19:38:43.478 +02:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-09-18 19:38:43.482 +02:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-09-18 19:38:43.482 +02:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-09-18 19:38:43.482 +02:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-09-18 19:38:43.482 +02:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-09-18 20:00:27.460 +02:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2018-09-18 20:00:27.469 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:00:27.469 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:00:27.537 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-09-18 20:00:27.661 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-09-18 20:00:27.661 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-09-18 20:00:27.675 +02:00 [DBG] Start token request.
+2018-09-18 20:00:27.685 +02:00 [DBG] Start client validation
+2018-09-18 20:00:27.692 +02:00 [DBG] Start parsing Basic Authentication secret
+2018-09-18 20:00:27.696 +02:00 [DBG] Start parsing for secret in post body
+2018-09-18 20:00:27.717 +02:00 [DBG] Parser found secret: PostBodySecretParser
+2018-09-18 20:00:27.717 +02:00 [DBG] Secret id found: ro.client
+2018-09-18 20:00:27.730 +02:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2018-09-18 20:00:27.730 +02:00 [DBG] Client validation success
+2018-09-18 20:00:27.815 +02:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "ro.client",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLGTI2ENCCN7:00000001",
+  "TimeStamp": "2018-09-18T18:00:27Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:00:27.842 +02:00 [DBG] Start token request validation
+2018-09-18 20:00:27.868 +02:00 [DBG] Start resource owner password token request validation
+2018-09-18 20:00:28.298 +02:00 [WRN] Invalid password for user 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04.
+2018-09-18 20:00:28.300 +02:00 [WRN] User 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04 failed to provide the correct password.
+2018-09-18 20:00:28.363 +02:00 [INF] Authentication failed for username: bob, reason: invalid credentials
+2018-09-18 20:00:28.371 +02:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "bob",
+  "Endpoint": "Token",
+  "Message": "invalid credentials",
+  "ActivityId": "0HLGTI2ENCCN7:00000001",
+  "TimeStamp": "2018-09-18T18:00:28Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:00:28.372 +02:00 [INF] User authentication failed: invalid_username_or_password
+2018-09-18 20:00:28.400 +02:00 [INF] {
+  "ClientId": "ro.client",
+  "GrantType": "password",
+  "Scopes": "openid ordersapi profile",
+  "UserName": "bob",
+  "Raw": {
+    "client_id": "ro.client",
+    "client_secret": "***REDACTED***",
+    "grant_type": "password",
+    "username": "bob",
+    "password": "***REDACTED***",
+    "scope": "ordersapi openid profile"
+  }
+}
+2018-09-18 20:00:28.400 +02:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "bob",
+  "Endpoint": "UI",
+  "Message": "invalid_username_or_password",
+  "ActivityId": "0HLGTI2ENCCN7:00000001",
+  "TimeStamp": "2018-09-18T18:00:28Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:00:28.409 +02:00 [INF] {
+  "Name": "Token Issued Failure",
+  "Category": "Token",
+  "EventType": "Failure",
+  "Id": 2001,
+  "ClientId": "ro.client",
+  "Endpoint": "Token",
+  "Scopes": "openid ordersapi profile",
+  "GrantType": "password",
+  "Error": "invalid_grant",
+  "ErrorDescription": "invalid_username_or_password",
+  "ActivityId": "0HLGTI2ENCCN7:00000001",
+  "TimeStamp": "2018-09-18T18:00:28Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:01:12.078 +02:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2018-09-18 20:01:12.079 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:01:12.079 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:01:12.080 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-09-18 20:01:12.082 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-09-18 20:01:12.082 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-09-18 20:01:12.083 +02:00 [DBG] Start token request.
+2018-09-18 20:01:12.083 +02:00 [DBG] Start client validation
+2018-09-18 20:01:12.092 +02:00 [DBG] Start parsing Basic Authentication secret
+2018-09-18 20:01:12.093 +02:00 [DBG] Start parsing for secret in post body
+2018-09-18 20:01:12.093 +02:00 [DBG] Parser found secret: PostBodySecretParser
+2018-09-18 20:01:12.093 +02:00 [DBG] Secret id found: ro.client
+2018-09-18 20:01:12.094 +02:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2018-09-18 20:01:12.094 +02:00 [DBG] Client validation success
+2018-09-18 20:01:12.094 +02:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "ro.client",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLGTI2ENCCN7:00000002",
+  "TimeStamp": "2018-09-18T18:01:12Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:01:12.094 +02:00 [DBG] Start token request validation
+2018-09-18 20:01:12.094 +02:00 [DBG] Start resource owner password token request validation
+2018-09-18 20:01:12.114 +02:00 [WRN] Invalid password for user 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04.
+2018-09-18 20:01:12.114 +02:00 [WRN] User 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04 failed to provide the correct password.
+2018-09-18 20:01:12.118 +02:00 [INF] Authentication failed for username: bob, reason: invalid credentials
+2018-09-18 20:01:12.118 +02:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "bob",
+  "Endpoint": "Token",
+  "Message": "invalid credentials",
+  "ActivityId": "0HLGTI2ENCCN7:00000002",
+  "TimeStamp": "2018-09-18T18:01:12Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:01:12.118 +02:00 [INF] User authentication failed: invalid_username_or_password
+2018-09-18 20:01:12.129 +02:00 [INF] {
+  "ClientId": "ro.client",
+  "GrantType": "password",
+  "Scopes": "openid ordersapi profile",
+  "UserName": "bob",
+  "Raw": {
+    "client_id": "ro.client",
+    "client_secret": "***REDACTED***",
+    "grant_type": "password",
+    "username": "bob",
+    "password": "***REDACTED***",
+    "scope": "ordersapi openid profile"
+  }
+}
+2018-09-18 20:01:12.129 +02:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "bob",
+  "Endpoint": "UI",
+  "Message": "invalid_username_or_password",
+  "ActivityId": "0HLGTI2ENCCN7:00000002",
+  "TimeStamp": "2018-09-18T18:01:12Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:01:12.129 +02:00 [INF] {
+  "Name": "Token Issued Failure",
+  "Category": "Token",
+  "EventType": "Failure",
+  "Id": 2001,
+  "ClientId": "ro.client",
+  "Endpoint": "Token",
+  "Scopes": "openid ordersapi profile",
+  "GrantType": "password",
+  "Error": "invalid_grant",
+  "ErrorDescription": "invalid_username_or_password",
+  "ActivityId": "0HLGTI2ENCCN7:00000002",
+  "TimeStamp": "2018-09-18T18:01:12Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:03:01.738 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-09-18 20:03:01.740 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-09-18 20:03:01.740 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-09-18 20:03:01.745 +02:00 [DBG] Start discovery request
+2018-09-18 20:03:03.718 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2018-09-18 20:03:24.356 +02:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2018-09-18 20:03:24.356 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:24.357 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:24.357 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-09-18 20:03:24.358 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-09-18 20:03:24.358 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-09-18 20:03:24.358 +02:00 [DBG] Start token request.
+2018-09-18 20:03:24.358 +02:00 [DBG] Start client validation
+2018-09-18 20:03:24.359 +02:00 [DBG] Start parsing Basic Authentication secret
+2018-09-18 20:03:24.359 +02:00 [DBG] Start parsing for secret in post body
+2018-09-18 20:03:24.359 +02:00 [DBG] Parser found secret: PostBodySecretParser
+2018-09-18 20:03:24.359 +02:00 [DBG] Secret id found: ro.client
+2018-09-18 20:03:24.360 +02:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2018-09-18 20:03:24.370 +02:00 [DBG] Client validation success
+2018-09-18 20:03:24.370 +02:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "ro.client",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLGTI2ENCCN9:00000001",
+  "TimeStamp": "2018-09-18T18:03:24Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:03:24.370 +02:00 [DBG] Start token request validation
+2018-09-18 20:03:24.373 +02:00 [DBG] Start resource owner password token request validation
+2018-09-18 20:03:24.398 +02:00 [INF] Credentials validated for username: bob
+2018-09-18 20:03:24.406 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "DisplayName": "bob",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGTI2ENCCN9:00000001",
+  "TimeStamp": "2018-09-18T18:03:24Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:03:24.413 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGTI2ENCCN9:00000001",
+  "TimeStamp": "2018-09-18T18:03:24Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:03:24.413 +02:00 [DBG] Resource owner password token request validation success.
+2018-09-18 20:03:24.413 +02:00 [INF] Token request validation success
+{
+  "ClientId": "ro.client",
+  "GrantType": "password",
+  "Scopes": "openid ordersapi profile",
+  "UserName": "bob",
+  "Raw": {
+    "client_id": "ro.client",
+    "client_secret": "***REDACTED***",
+    "grant_type": "password",
+    "username": "bob",
+    "password": "***REDACTED***",
+    "scope": "ordersapi openid profile"
+  }
+}
+2018-09-18 20:03:24.442 +02:00 [DBG] Getting claims for access token for client: ro.client
+2018-09-18 20:03:24.442 +02:00 [DBG] Getting claims for access token for subject: 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04
+2018-09-18 20:03:24.638 +02:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "ro.client",
+  "Endpoint": "Token",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Scopes": "openid profile ordersapi",
+  "GrantType": "password",
+  "Tokens": [
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****i6Cw"
+    }
+  ],
+  "ActivityId": "0HLGTI2ENCCN9:00000001",
+  "TimeStamp": "2018-09-18T18:03:24Z",
+  "ProcessId": 38303,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-18 20:03:24.639 +02:00 [DBG] Token request success.
+2018-09-18 20:03:24.654 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:24.654 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:24.654 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:24.660 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:24.660 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:24.660 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:24.660 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-18 20:03:24.662 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-18 20:03:24.662 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-18 20:03:24.669 +02:00 [DBG] Start userinfo request
+2018-09-18 20:03:24.673 +02:00 [DBG] Bearer token found in header
+2018-09-18 20:03:24.747 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-09-18 20:03:24.751 +02:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Jwt",
+  "ExpectedScope": "openid",
+  "Claims": {
+    "nbf": 1537293804,
+    "exp": 1537297404,
+    "iss": "http://localhost:5000",
+    "aud": [
+      "http://localhost:5000/resources",
+      "ordersapi"
+    ],
+    "client_id": "ro.client",
+    "sub": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+    "auth_time": 1537293804,
+    "idp": "local",
+    "scope": [
+      "openid",
+      "profile",
+      "ordersapi"
+    ],
+    "amr": "pwd"
+  }
+}
+2018-09-18 20:03:24.758 +02:00 [DBG] Creating userinfo response
+2018-09-18 20:03:24.762 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.766 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.769 +02:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2018-09-18 20:03:24.769 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.772 +02:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-09-18 20:03:24.773 +02:00 [DBG] End userinfo request
+2018-09-18 20:03:24.787 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:24.787 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:24.787 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:24.793 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:24.793 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:24.793 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:24.794 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-18 20:03:24.794 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-18 20:03:24.794 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-18 20:03:24.794 +02:00 [DBG] Start userinfo request
+2018-09-18 20:03:24.794 +02:00 [DBG] Bearer token found in header
+2018-09-18 20:03:24.799 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-09-18 20:03:24.799 +02:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Jwt",
+  "ExpectedScope": "openid",
+  "Claims": {
+    "nbf": 1537293804,
+    "exp": 1537297404,
+    "iss": "http://localhost:5000",
+    "aud": [
+      "http://localhost:5000/resources",
+      "ordersapi"
+    ],
+    "client_id": "ro.client",
+    "sub": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+    "auth_time": 1537293804,
+    "idp": "local",
+    "scope": [
+      "openid",
+      "profile",
+      "ordersapi"
+    ],
+    "amr": "pwd"
+  }
+}
+2018-09-18 20:03:24.799 +02:00 [DBG] Creating userinfo response
+2018-09-18 20:03:24.807 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.808 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.808 +02:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2018-09-18 20:03:24.808 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:24.810 +02:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-09-18 20:03:24.811 +02:00 [DBG] End userinfo request
+2018-09-18 20:03:43.522 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:43.522 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:43.523 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:43.576 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-18 20:03:43.577 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-18 20:03:43.577 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-18 20:03:43.577 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-18 20:03:43.578 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-18 20:03:43.578 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-18 20:03:43.578 +02:00 [DBG] Start userinfo request
+2018-09-18 20:03:43.578 +02:00 [DBG] Bearer token found in header
+2018-09-18 20:03:43.586 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-09-18 20:03:43.586 +02:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Jwt",
+  "ExpectedScope": "openid",
+  "Claims": {
+    "nbf": 1537293804,
+    "exp": 1537297404,
+    "iss": "http://localhost:5000",
+    "aud": [
+      "http://localhost:5000/resources",
+      "ordersapi"
+    ],
+    "client_id": "ro.client",
+    "sub": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+    "auth_time": 1537293804,
+    "idp": "local",
+    "scope": [
+      "openid",
+      "profile",
+      "ordersapi"
+    ],
+    "amr": "pwd"
+  }
+}
+2018-09-18 20:03:43.592 +02:00 [DBG] Creating userinfo response
+2018-09-18 20:03:43.592 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:43.593 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:43.593 +02:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2018-09-18 20:03:43.597 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-18 20:03:43.599 +02:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-09-18 20:03:43.599 +02:00 [DBG] End userinfo request
+2018-09-18 20:04:15.677 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-09-18 20:04:15.678 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-09-18 20:04:15.678 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-09-18 20:04:15.678 +02:00 [DBG] Start discovery request
+2018-09-18 20:04:15.784 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-09-18 20:04:15.785 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-09-18 20:04:15.786 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-09-18 20:04:15.789 +02:00 [DBG] Start key discovery request

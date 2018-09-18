@@ -59,7 +59,15 @@ namespace OrdersService
 
             services.AddSignalR();
 
-            services.AddCors();
+            //services.AddCors();
+            services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials()
+                        .WithOrigins("http://localhost:4200");
+            }));
 
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>
@@ -67,6 +75,7 @@ namespace OrdersService
                     options.Authority = Configuration["appSettings:idSrvBaseUrl"];
                     options.RequireHttpsMetadata = false;
                     options.ApiName = "ordersapi";
+                    options.SupportedTokens = SupportedTokens.Jwt;
                 });
         }
 
@@ -90,12 +99,7 @@ namespace OrdersService
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(policy =>
-            {
-                policy.AllowAnyOrigin();
-                policy.AllowAnyHeader();
-                policy.AllowAnyMethod();
-            });
+            app.UseCors("CorsPolicy");
 
             app.UseQueryStringAuthorization();
             app.UseAuthentication();
