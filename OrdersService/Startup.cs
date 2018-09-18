@@ -47,10 +47,7 @@ namespace OrdersService
             services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, ConsulHostedService>();
 
             services
-                .AddMvcCore()
-                .AddApiExplorer()
-                .AddJsonFormatters()
-                .AddAuthorization();
+                .AddMvc();
 
             services.AddSwaggerGen(c =>
             {
@@ -150,12 +147,12 @@ namespace OrdersService
                 {
                     using (var advancedBus = RabbitHutch.CreateBus(Configuration["appSettings:rabbitMqConnectionString"]).Advanced)
                     {
-                        var newOrderQueue = advancedBus.QueueDeclare("QueuingMessages.NewOrderMessage:QueuingMessages_shipping");
-                        var newOrderExchange = advancedBus.ExchangeDeclare("QueuingMessages.NewOrderMessage:QueuingMessages", ExchangeType.Topic);
+                        var newOrderQueue = advancedBus.QueueDeclare("OrdersService.Messages.NewOrderMessage, OrdersService_shipping");
+                        var newOrderExchange = advancedBus.ExchangeDeclare("OrdersService.Messages.NewOrderMessage, OrdersService", ExchangeType.Topic);
                         advancedBus.Bind(newOrderExchange, newOrderQueue, String.Empty);
 
-                        var shippingCreatedQueue = advancedBus.QueueDeclare("QueuingMessages.ShippingCreatedMessage:QueuingMessages_shipping");
-                        var shippingCreatedExchange = advancedBus.ExchangeDeclare("QueuingMessages.ShippingCreatedMessage:QueuingMessages", ExchangeType.Topic);
+                        var shippingCreatedQueue = advancedBus.QueueDeclare("OrdersService.Messages.ShippingCreatedMessage, OrdersService_shipping");
+                        var shippingCreatedExchange = advancedBus.ExchangeDeclare("OrdersService.Messages.ShippingCreatedMessage, OrdersService", ExchangeType.Topic);
                         advancedBus.Bind(shippingCreatedExchange, shippingCreatedQueue, String.Empty);
                     }
                 });

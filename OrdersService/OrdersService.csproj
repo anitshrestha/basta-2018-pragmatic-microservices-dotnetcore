@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="Consul" Version="0.7.2.6" />
-    <PackageReference Include="EasyNetQ" Version="3.3.0" />
+    <PackageReference Include="EasyNetQ" Version="3.3.1" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.1.1" />

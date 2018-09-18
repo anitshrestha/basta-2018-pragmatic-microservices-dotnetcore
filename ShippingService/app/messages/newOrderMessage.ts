@@ -1,9 +1,10 @@
-import {Order} from "./order";
+import { Order } from "./order";
 
 export class NewOrderMessage {
-    public static TypeID: string = 'QueuingMessages.NewOrderMessage:QueuingMessages';
-    public TypeID: string = 'QueuingMessages.NewOrderMessage:QueuingMessages';
+  public static TypeID: string =
+    "OrdersService.Messages.NewOrderMessage, OrdersService";
+  public TypeID: string =
+    "OrdersService.Messages.NewOrderMessage, OrdersService";
 
-    constructor(public UserId: any, public Order: Order) {
-    }
+  constructor(public UserId: any, public Order: Order) {}
 }

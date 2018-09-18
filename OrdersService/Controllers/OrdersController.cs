@@ -17,7 +17,7 @@ namespace OrdersService.Controllers
 {
     [Route("api/[controller]")]
     [Authorize]
-    public class OrdersController : Controller
+    public class OrdersController : ControllerBase
     {
         private static readonly ConcurrentDictionary<Guid, DTOs.Order> Datastore;
         private readonly AppSettings _settings;
@@ -35,7 +35,6 @@ namespace OrdersService.Controllers
         }
 
         [HttpGet]
-        [Route("")]
         public List<DTOs.Order> GetOrders()
         {
             try
@@ -52,9 +51,13 @@ namespace OrdersService.Controllers
         }
 
         [HttpPost]
-        [Route("")]
-        public void AddNewOrder([FromBody] DTOs.Order newOrder)
+        public ActionResult AddNewOrder([FromBody] DTOs.Order newOrder)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var orderId = Guid.NewGuid();
             newOrder.Id = orderId;
 
@@ -87,6 +90,8 @@ namespace OrdersService.Controllers
 
                 _orderHubContext.Clients.Group(message.UserId).SendAsync("orderCreated");
             }
+
+            return Ok();
         }
     }
 }
