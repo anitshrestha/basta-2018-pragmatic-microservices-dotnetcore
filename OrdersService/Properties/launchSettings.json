@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "OrdersService.NetCore": {
+    "OrdersService": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

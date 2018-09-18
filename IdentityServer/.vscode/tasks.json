@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/OrdersService.csproj"
+                "${workspaceFolder}/IdentityServerWithAspNetIdentity/IdentityServerWithAspNetIdentity.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Options;
 using OrdersService.Hubs;
 using OrdersService.Messages;
+using Serilog;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -44,7 +45,7 @@ namespace OrdersService.Controllers
             catch (Exception e)
             {
                 string message = "We could not retrieve the list of orders.";
-                //Log.Error(message + $" Reason: {0}", e);
+                Log.Error(message + $" Reason: {0}", e);
 
                 throw new OrderServiceException(message);
             }
@@ -64,7 +65,7 @@ namespace OrdersService.Controllers
             catch (Exception e)
             {
                 string message = "We could not add the new order.";
-                //Log.Error(message + $" Reason: {0}", e);
+                Log.Error(message + $" Reason: {0}", e);
 
                 throw new OrderServiceException(message);
             }

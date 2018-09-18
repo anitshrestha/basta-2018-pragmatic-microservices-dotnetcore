@@ -60,7 +60,7 @@ namespace OrdersService
             services.AddSignalR();
 
             services.AddCors();
-            
+
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>
                 {
@@ -79,8 +79,8 @@ namespace OrdersService
             Console.CancelKeyPress += (sender, eventArgs) =>
             {
                 appLifetime.StopApplication();
-            // Don't terminate the process immediately, wait for the Main thread to exit gracefully.
-            eventArgs.Cancel = true;
+                // Don't terminate the process immediately, wait for the Main thread to exit gracefully.
+                eventArgs.Cancel = true;
             };
 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap = new Dictionary<string, string>();
@@ -110,7 +110,7 @@ namespace OrdersService
 
             app.UseSignalR(routes =>
             {
-                routes.MapHub<OrdersHub>("ordersHub");
+                routes.MapHub<OrdersHub>("/ordersHub");
             });
 
             _ordersHubContext = app.ApplicationServices.GetService<IHubContext<OrdersHub>>();
