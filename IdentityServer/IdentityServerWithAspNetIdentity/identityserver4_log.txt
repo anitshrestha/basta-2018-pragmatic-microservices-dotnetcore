@@ -1456,3 +1456,321 @@ Current time: '09/18/2018 19:34:05'.
 2018-09-18 22:04:22.025 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2018-09-18 22:04:22.025 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2018-09-18 22:04:22.025 +02:00 [DBG] Start key discovery request
+2018-09-19 18:43:11.996 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-09-19 18:43:12.109 +02:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-09-19 18:43:12.112 +02:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-09-19 18:43:12.112 +02:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-09-19 18:43:12.112 +02:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-09-19 18:43:12.112 +02:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-09-19 18:45:11.242 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:11.254 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:11.254 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:11.275 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:11.275 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:11.276 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:11.350 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-19 18:45:11.465 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-19 18:45:11.465 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-19 18:45:11.472 +02:00 [DBG] Start userinfo request
+2018-09-19 18:45:11.476 +02:00 [DBG] Bearer token found in header
+2018-09-19 18:45:11.639 +02:00 [ERR] JWT token validation error: Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired.
+ValidTo: '09/18/2018 20:34:17'
+Current time: '09/19/2018 16:45:11'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwt, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at IdentityServer4.Validation.TokenValidator.<ValidateJwtAsync>d__14.MoveNext() in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\Validation\TokenValidator.cs:line 287
+2018-09-19 18:45:11.795 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-09-19 18:45:11.802 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-09-19 18:45:11.802 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-09-19 18:45:11.807 +02:00 [DBG] Start discovery request
+2018-09-19 18:45:11.918 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-09-19 18:45:11.918 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-09-19 18:45:11.919 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-09-19 18:45:11.922 +02:00 [DBG] Start key discovery request
+2018-09-19 18:45:24.109 +02:00 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2018-09-19 18:45:24.109 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:24.109 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:24.110 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-09-19 18:45:24.115 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-09-19 18:45:24.115 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-09-19 18:45:24.126 +02:00 [DBG] Start token request.
+2018-09-19 18:45:24.133 +02:00 [DBG] Start client validation
+2018-09-19 18:45:24.138 +02:00 [DBG] Start parsing Basic Authentication secret
+2018-09-19 18:45:24.142 +02:00 [DBG] Start parsing for secret in post body
+2018-09-19 18:45:24.153 +02:00 [DBG] Parser found secret: PostBodySecretParser
+2018-09-19 18:45:24.153 +02:00 [DBG] Secret id found: ro.client
+2018-09-19 18:45:24.166 +02:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2018-09-19 18:45:24.167 +02:00 [DBG] Client validation success
+2018-09-19 18:45:24.204 +02:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "ro.client",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLGU9T1VEP1T:00000003",
+  "TimeStamp": "2018-09-19T16:45:24Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:45:24.212 +02:00 [DBG] Start token request validation
+2018-09-19 18:45:24.226 +02:00 [DBG] Start resource owner password token request validation
+2018-09-19 18:45:24.634 +02:00 [INF] Credentials validated for username: bob
+2018-09-19 18:45:24.640 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "DisplayName": "bob",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGU9T1VEP1T:00000003",
+  "TimeStamp": "2018-09-19T16:45:24Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:45:24.648 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGU9T1VEP1T:00000003",
+  "TimeStamp": "2018-09-19T16:45:24Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:45:24.648 +02:00 [DBG] Resource owner password token request validation success.
+2018-09-19 18:45:24.656 +02:00 [INF] Token request validation success
+{
+  "ClientId": "ro.client",
+  "GrantType": "password",
+  "Scopes": "openid ordersapi profile",
+  "UserName": "bob",
+  "Raw": {
+    "client_id": "ro.client",
+    "client_secret": "***REDACTED***",
+    "grant_type": "password",
+    "username": "bob",
+    "password": "***REDACTED***",
+    "scope": "ordersapi openid profile"
+  }
+}
+2018-09-19 18:45:24.680 +02:00 [DBG] Getting claims for access token for client: ro.client
+2018-09-19 18:45:24.680 +02:00 [DBG] Getting claims for access token for subject: 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04
+2018-09-19 18:45:24.829 +02:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "ro.client",
+  "Endpoint": "Token",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Scopes": "openid profile ordersapi",
+  "GrantType": "password",
+  "Tokens": [
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****6EGA"
+    }
+  ],
+  "ActivityId": "0HLGU9T1VEP1T:00000003",
+  "TimeStamp": "2018-09-19T16:45:24Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:45:24.830 +02:00 [DBG] Token request success.
+2018-09-19 18:45:24.842 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:24.843 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:24.843 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:24.846 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:24.846 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:24.846 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:24.846 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-19 18:45:24.847 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-19 18:45:24.847 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-19 18:45:24.847 +02:00 [DBG] Start userinfo request
+2018-09-19 18:45:24.851 +02:00 [DBG] Bearer token found in header
+2018-09-19 18:45:24.882 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-09-19 18:45:24.887 +02:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Jwt",
+  "ExpectedScope": "openid",
+  "Claims": {
+    "nbf": 1537375524,
+    "exp": 1537379124,
+    "iss": "http://localhost:5000",
+    "aud": [
+      "http://localhost:5000/resources",
+      "ordersapi"
+    ],
+    "client_id": "ro.client",
+    "sub": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+    "auth_time": 1537375524,
+    "idp": "local",
+    "scope": [
+      "openid",
+      "profile",
+      "ordersapi"
+    ],
+    "amr": "pwd"
+  }
+}
+2018-09-19 18:45:24.894 +02:00 [DBG] Creating userinfo response
+2018-09-19 18:45:24.899 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.903 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.906 +02:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2018-09-19 18:45:24.906 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.910 +02:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-09-19 18:45:24.910 +02:00 [DBG] End userinfo request
+2018-09-19 18:45:24.921 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:24.922 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:24.922 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:24.927 +02:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:4200
+2018-09-19 18:45:24.927 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2018-09-19 18:45:24.927 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-09-19 18:45:24.927 +02:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2018-09-19 18:45:24.928 +02:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2018-09-19 18:45:24.928 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2018-09-19 18:45:24.928 +02:00 [DBG] Start userinfo request
+2018-09-19 18:45:24.928 +02:00 [DBG] Bearer token found in header
+2018-09-19 18:45:24.932 +02:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2018-09-19 18:45:24.932 +02:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Jwt",
+  "ExpectedScope": "openid",
+  "Claims": {
+    "nbf": 1537375524,
+    "exp": 1537379124,
+    "iss": "http://localhost:5000",
+    "aud": [
+      "http://localhost:5000/resources",
+      "ordersapi"
+    ],
+    "client_id": "ro.client",
+    "sub": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+    "auth_time": 1537375524,
+    "idp": "local",
+    "scope": [
+      "openid",
+      "profile",
+      "ordersapi"
+    ],
+    "amr": "pwd"
+  }
+}
+2018-09-19 18:45:24.932 +02:00 [DBG] Creating userinfo response
+2018-09-19 18:45:24.934 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.934 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.934 +02:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2018-09-19 18:45:24.935 +02:00 [DBG] Scopes in access token: openid profile ordersapi
+2018-09-19 18:45:24.937 +02:00 [INF] Profile service returned to the following claim types: sub name given_name family_name website preferred_username
+2018-09-19 18:45:24.937 +02:00 [DBG] End userinfo request
+2018-09-19 18:46:20.722 +02:00 [DBG] Request path /connect/token matched to endpoint type Token
+2018-09-19 18:46:20.723 +02:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2018-09-19 18:46:20.723 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2018-09-19 18:46:20.723 +02:00 [DBG] Start token request.
+2018-09-19 18:46:20.724 +02:00 [DBG] Start client validation
+2018-09-19 18:46:20.724 +02:00 [DBG] Start parsing Basic Authentication secret
+2018-09-19 18:46:20.724 +02:00 [DBG] Start parsing for secret in post body
+2018-09-19 18:46:20.725 +02:00 [DBG] Parser found secret: PostBodySecretParser
+2018-09-19 18:46:20.725 +02:00 [DBG] Secret id found: ro.client
+2018-09-19 18:46:20.725 +02:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2018-09-19 18:46:20.725 +02:00 [DBG] Client validation success
+2018-09-19 18:46:20.725 +02:00 [INF] {
+  "Name": "Client Authentication Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1010,
+  "ClientId": "ro.client",
+  "AuthenticationMethod": "SharedSecret",
+  "ActivityId": "0HLGU9T1VEP20:00000001",
+  "TimeStamp": "2018-09-19T16:46:20Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:46:20.729 +02:00 [DBG] Start token request validation
+2018-09-19 18:46:20.729 +02:00 [DBG] Start resource owner password token request validation
+2018-09-19 18:46:20.749 +02:00 [INF] Credentials validated for username: bob
+2018-09-19 18:46:20.749 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "DisplayName": "bob",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGU9T1VEP20:00000001",
+  "TimeStamp": "2018-09-19T16:46:20Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:46:20.750 +02:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Endpoint": "Token",
+  "ActivityId": "0HLGU9T1VEP20:00000001",
+  "TimeStamp": "2018-09-19T16:46:20Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:46:20.750 +02:00 [DBG] Resource owner password token request validation success.
+2018-09-19 18:46:20.750 +02:00 [INF] Token request validation success
+{
+  "ClientId": "ro.client",
+  "GrantType": "password",
+  "Scopes": "openid ordersapi profile",
+  "UserName": "bob",
+  "Raw": {
+    "client_id": "ro.client",
+    "client_secret": "***REDACTED***",
+    "grant_type": "password",
+    "username": "bob",
+    "password": "***REDACTED***",
+    "scope": "ordersapi openid profile"
+  }
+}
+2018-09-19 18:46:20.750 +02:00 [DBG] Getting claims for access token for client: ro.client
+2018-09-19 18:46:20.750 +02:00 [DBG] Getting claims for access token for subject: 129f89be-8ec6-4d26-9b97-aa1dc3b1ae04
+2018-09-19 18:46:20.768 +02:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "ro.client",
+  "Endpoint": "Token",
+  "SubjectId": "129f89be-8ec6-4d26-9b97-aa1dc3b1ae04",
+  "Scopes": "openid profile ordersapi",
+  "GrantType": "password",
+  "Tokens": [
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****8Yag"
+    }
+  ],
+  "ActivityId": "0HLGU9T1VEP20:00000001",
+  "TimeStamp": "2018-09-19T16:46:20Z",
+  "ProcessId": 97675,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2018-09-19 18:46:20.769 +02:00 [DBG] Token request success.

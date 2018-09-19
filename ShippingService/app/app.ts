@@ -8,6 +8,7 @@ import { ShippingCreatedMessage } from "./messages/shippingCreatedMessage";
 import * as uuid from "node-uuid";
 
 import * as restify from "restify";
+import * as corsMiddleware from "restify-cors-middleware";
 import StatusController from "./controllers/statusController";
 import { settings } from "./config/settings";
 
@@ -81,10 +82,13 @@ export let server = restify.createServer({
   name: settings.name
 });
 
-server.use(restify.CORS());
-server.use(restify.bodyParser());
-server.use(restify.queryParser());
-server.use(restify.fullResponse());
+const cors = corsMiddleware({
+  origins: ["*"],
+  allowHeaders: ["*"]
+});
+
+server.pre(cors.preflight);
+server.use(cors.actual);
 
 server.get("/api/ping", new StatusController().get);
 

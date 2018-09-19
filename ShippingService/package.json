@@ -14,16 +14,17 @@
     "start-server": "node server.js"
   },
   "dependencies": {
-    "consul": "^0.29.0",
+    "consul": "^0.34.0",
     "easynodeq": "0.2.8",
     "node-cleanup": "^2.1.2",
     "node-uuid": "^1.4.8",
-    "restify": "4.3.0"
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^8.0.28",
-    "nodemon": "^1.12.1",
-    "ts-node": "3.3.0",
-    "typescript": "^2.5.2"
+    "@types/node": "^10.10.1",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^2.9.2"
   }
 }
