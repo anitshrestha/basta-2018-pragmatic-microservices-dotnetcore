@@ -255,3 +255,4 @@ IdentityServerWithAspNetIdentity/out/
 MyOrdersAppService/MyOrdersAppService.NetCore/client/
 IdentityServer/out/
 OrdersClientService/MyOrdersAppService.NetCore/client/
+/IdentityServer/IdentityServerWithAspNetIdentity/identityserver4_log.txt
