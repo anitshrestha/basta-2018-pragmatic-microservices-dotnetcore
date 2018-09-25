@@ -256,3 +256,4 @@ MyOrdersAppService/MyOrdersAppService.NetCore/client/
 IdentityServer/out/
 OrdersClientService/MyOrdersAppService.NetCore/client/
 /IdentityServer/IdentityServerWithAspNetIdentity/identityserver4_log.txt
+/OrdersService/.vscode/solution-explorer
